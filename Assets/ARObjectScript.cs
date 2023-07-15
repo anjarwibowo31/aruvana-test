@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ARObjectRotate : MonoBehaviour
+public class ARObjectScript : MonoBehaviour
 {
     [SerializeField] private float rotationSpeed = 10f;
     [SerializeField] private float zoomSpeed = 1f;
