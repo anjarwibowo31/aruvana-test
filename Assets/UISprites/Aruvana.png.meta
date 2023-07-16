@@ -1,0 +1,281 @@
+fileFormatVersion: 2
+guid: b4f94b4a06f79874cbd7c58d34aa70f8
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Aruvana_48
+      rect:
+        serializedVersion: 2
+        x: 251
+        y: 264
+        width: 416
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86290ce309563d74cb958e9149555775
+      internalID: 30005216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aruvana_49
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 132
+        width: 418
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3df09001d542df24099441989d4bb3bb
+      internalID: -1303823725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aruvana_50
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 0
+        width: 418
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee133f08c4fcec94090f4adad6b616e3
+      internalID: 120537207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aruvana_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 510
+        width: 918
+        height: 343
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4786bc6da7658454aa18e9583de308fd
+      internalID: 1382548335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 16579d3e31b35384cb87076814413421
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Aruvana_31: -1495141380
+      Aruvana_28: -32970862
+      Aruvana_48: 30005216
+      Aruvana_47: -2141588165
+      Aruvana_17: -855121165
+      Aruvana_27: 1801764620
+      Aruvana_20: -343697562
+      Aruvana_32: -778411916
+      Aruvana_38: 232252533
+      Aruvana_40: 1157273990
+      Aruvana_34: 805247850
+      Aruvana_9: 1883433090
+      Aruvana_16: -245242301
+      Aruvana_42: 1657226164
+      Aruvana_22: -1959154098
+      Aruvana_25: 1927644818
+      Aruvana_4: 1223851807
+      Aruvana_30: -1853967395
+      Aruvana_0: 1382548335
+      Aruvana_43: -1497451775
+      Aruvana_8: -306313740
+      Aruvana_36: 1911449936
+      Aruvana_2: -10021415
+      Aruvana_12: 30869755
+      Aruvana_13: -1722308935
+      Aruvana_24: 1939674171
+      Aruvana_7: -1884301730
+      Aruvana_46: 2107727263
+      Aruvana_1: 659487840
+      Aruvana_41: 2142468033
+      Aruvana_19: 1257010080
+      Aruvana_50: 120537207
+      Aruvana_11: -131998740
+      Aruvana_37: -972861310
+      Aruvana_10: 892872703
+      Aruvana_14: 1085253697
+      Aruvana_15: -2097867794
+      Aruvana_5: -1682048939
+      Aruvana_21: -224212943
+      Aruvana_3: 77627648
+      Aruvana_49: -1303823725
+      Aruvana_35: -58635613
+      Aruvana_6: -1528663784
+      Aruvana_23: -1125780954
+      Aruvana_26: 981294423
+      Aruvana_45: 420552578
+      Aruvana_33: -680644582
+      Aruvana_39: -204020764
+      Aruvana_18: -700803527
+      Aruvana_29: -1198142086
+      Aruvana_44: -1525736046
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
