@@ -283,7 +283,7 @@ MonoBehaviour:
   rotationSpeed: 100
   zoomSpeed: 0.02
   minSize: 0.35
-  maxSize: 2.5
+  maxSize: 1.6
 --- !u!1 &340201289
 GameObject:
   m_ObjectHideFlags: 0

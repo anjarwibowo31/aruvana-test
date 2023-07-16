@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <QCARConfig>
   <Tracking>
-    <ImageTarget name="Aruvana" size="0.200000 0.308019" />
+    <ImageTarget name="Aruvana_new" size="3.000000 3.000000" />
     <ImageTarget name="Aruvana_Logo" size="100.000000 100.000000" />
+    <ImageTarget name="Aruvana" size="0.200000 0.308019" />
   </Tracking>
 </QCARConfig>
