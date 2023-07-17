@@ -1,34 +1,22 @@
 using System.Collections;
 using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using UnityEngine.UI;
 
-public class MainMenuScript : MonoBehaviour
+public class IngameUIScript : MonoBehaviour
 {
-    [SerializeField] private GameObject mainMenu;
-    [SerializeField] private GameObject settingMenu;
-
     [SerializeField] private GameObject muteButton;
     [SerializeField] private GameObject unmuteButton;
 
-    [SerializeField] private Slider volumeSlider;
+    [SerializeField] private GameObject visualFX;
+    [SerializeField] private GameObject showVFXButton;
+    [SerializeField] private GameObject hideVFXButton;
 
     private void Start()
     {
-        mainMenu.SetActive(true);
-        settingMenu.SetActive(false);
-    }
-
-    public void OnStartButtonClicked() => SceneManager.LoadScene(1);
-
-    public void OnSettingButtonClicked()
-    {
-        mainMenu.SetActive(false);
-        settingMenu.SetActive(true);
-
-        volumeSlider.value = AudioManager.Instance.audioSource.volume;
+        visualFX.SetActive(true);
+        showVFXButton.SetActive(false);
+        hideVFXButton.SetActive(true);
 
         if (AudioManager.Instance.audioSource.mute == false)
         {
@@ -42,16 +30,23 @@ public class MainMenuScript : MonoBehaviour
         }
     }
 
-    public void OnBackButtonClicked()
+    public void OnMenuButtonClicked()
     {
-        mainMenu.SetActive(true);
-        settingMenu.SetActive(false);
-
+        SceneManager.LoadScene(0);
     }
 
-    public void OnSliderValueChanged()
+    public void OnShowVFXButtonClicked()
     {
-        AudioManager.Instance.audioSource.volume = volumeSlider.value;
+        visualFX.SetActive(true);
+        showVFXButton.SetActive(false);
+        hideVFXButton.SetActive(true);
+    }
+
+    public void OnHideVFXButtonClicked()
+    {
+        visualFX.SetActive(false);
+        showVFXButton.SetActive(true);
+        hideVFXButton.SetActive(false);
     }
 
     public void OnMuteButtonClicked()
@@ -67,6 +62,4 @@ public class MainMenuScript : MonoBehaviour
         muteButton.SetActive(true);
         unmuteButton.SetActive(false);
     }
-
-    public void OnExitButtonClicked() => Application.Quit();
 }
