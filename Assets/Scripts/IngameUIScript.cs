@@ -12,6 +12,12 @@ public class IngameUIScript : MonoBehaviour
     [SerializeField] private GameObject showVFXButton;
     [SerializeField] private GameObject hideVFXButton;
 
+    [SerializeField] private Renderer renderer;
+    [SerializeField] private Color firstColor;
+    [SerializeField] private Color secondColor;
+    [SerializeField] private Color thirdColor;
+    [SerializeField] private float changeSpeed;
+
     private void Start()
     {
         visualFX.SetActive(true);
@@ -61,5 +67,22 @@ public class IngameUIScript : MonoBehaviour
         AudioManager.Instance.audioSource.mute = false;
         muteButton.SetActive(true);
         unmuteButton.SetActive(false);
+    }
+
+    public void OnScreenshotButtonClicked()
+    {
+        ScreenshotHandler.TakeScreenshot();
+    }
+
+    private void Update()
+    {
+        if (visualFX.activeSelf)
+        {
+            renderer.material.color = Color.Lerp(firstColor, secondColor, Mathf.PingPong(Time.time * changeSpeed, 1));
+        }
+        else
+        {
+            renderer.material.color = thirdColor;
+        }
     }
 }
