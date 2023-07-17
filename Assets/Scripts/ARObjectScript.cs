@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class ARObjectScript : MonoBehaviour
 {
-    [SerializeField] private float rotationSpeed = 10f;
+    [SerializeField] private float loopRotationSpeed = 10f;
+    [SerializeField] private float manualRotationSpeed = 40f;
     [SerializeField] private float zoomSpeed = 1f;
     [SerializeField] private float minSize = 0.35f;
     [SerializeField] private float maxSize = 2.5f;
@@ -13,9 +14,6 @@ public class ARObjectScript : MonoBehaviour
 
     void Update()
     {
-        // loop rotation
-        transform.Rotate(Vector3.up, rotationSpeed * Time.deltaTime);
-
         if (Input.touchCount > 1)
         {
             Touch touch0 = Input.GetTouch(0);
@@ -31,13 +29,31 @@ public class ARObjectScript : MonoBehaviour
                 float deltaDistance = initialDistance - currentDistance;
                 float zoomAmount = deltaDistance * zoomSpeed * Time.deltaTime;
 
-                // Perform zooming
+                // Perform Zooming
                 Vector3 newScale = transform.localScale - new Vector3(zoomAmount, zoomAmount, zoomAmount);
                 newScale.x = Mathf.Clamp(newScale.x, minSize, maxSize);
                 newScale.y = Mathf.Clamp(newScale.y, minSize, maxSize);
                 newScale.z = Mathf.Clamp(newScale.z, minSize, maxSize);
                 transform.localScale = newScale;
             }
+        }
+        else if (Input.touchCount == 1)
+        {
+            Touch touch = Input.GetTouch(0);
+
+            if (touch.phase == TouchPhase.Moved)
+            {
+                Vector2 deltaPosition = touch.deltaPosition;
+                float rotationY = -deltaPosition.x * manualRotationSpeed * Time.deltaTime;
+
+                // Perform swipe to rotate
+                transform.Rotate(0f, rotationY, 0f);
+            }
+        }
+        else if (Input.touchCount != 1)
+        {
+            // Perform rotation looping
+            transform.Rotate(Vector3.up, loopRotationSpeed * Time.deltaTime);
         }
     }
 }
