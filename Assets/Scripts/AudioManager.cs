@@ -7,13 +7,14 @@ public class AudioManager : MonoBehaviour
     // Ini singleton
     public static AudioManager Instance {  get; private set; }
 
-    private AudioSource audioSource;
+    public AudioSource audioSource { get; private set; }
 
     private void Awake()
     {
         if (Instance == null)
         {
             Instance = this;
+            DontDestroyOnLoad(gameObject);
         }
         else
         {
@@ -21,23 +22,5 @@ public class AudioManager : MonoBehaviour
         }
 
         audioSource = GetComponent<AudioSource>();
-    }
-
-    // Butuh script di ARScene untuk men-call ini
-    public void OnPlay()
-    {
-        audioSource.Play();
-    }
-
-    // Butuh script di ARScene untuk men-call ini
-    public void OnPause()
-    {
-        audioSource.Pause();
-    }
-
-    // Butuh script di ARScene untuk men-call ini
-    public void OnStop()
-    {
-        audioSource.Stop();
     }
 }
